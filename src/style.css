@@ -1,1 +1,20 @@
 /* styles go here */
+.info {
+  margin-bottom: 20px;
+}
+
+.person:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.register:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.fact:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.ad-info:not(:last-child) {
+  margin-bottom: 10px;
+}

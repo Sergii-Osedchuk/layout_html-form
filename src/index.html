@@ -14,147 +14,140 @@
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="info">
         <legend>Personal information</legend>
-        <div class="person">
-          <label for="surname">Surname:</label>
+        <label class="info-fact">
+          Surname:
           <input
             type="text"
             name="surname"
-            id="surname"
             autocomplete="off"
           >
-        </div>
-        <div class="person">
-          <label for="name">Name:</label>
+        </label>
+        <label class="info-fact">
+          Name:
           <input
             type="text"
             name="name"
-            id="name"
             autocomplete="off"
           >
-        </div>
-        <div class="person">
-          <label for="age">How old are You?</label>
+        </label>
+        <label class="info-fact">
+          How old are You?
           <input
             type="number"
             name="age"
-            id="age"
             value="12"
             min="0"
             max="100"
           >
-        </div>
-        <div class="person">
-          <label for="dateOfBirth">Full date of birth:</label>
+        </label>
+        <label class="info-fact">
+          Full date of birth:
           <input
             type="date"
             name="dateOfBirth"
-            id="dateOfBirth"
           >
-        </div>
-        <div class="person">
-          <label for="accept">I accept the term of the agreement</label>
+        </label>
+        <label class="info-fact">
+          I accept the term of the agreement
           <input
             type="checkbox"
             name="accept"
-            id="accept"
             required
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="info">
         <legend>Registration</legend>
-        <div class="register">
-          <label for="mail">E-mail:</label>
+        <label class="info-fact">
+          E-mail:
           <input
-            type="email"
-            name="mail"
-            id="mail"
-            placeholder="email@example.com"
+          type="email"
+          name="mail"
+          placeholder="email@example.com"
           >
-        </div>
-        <div class="register">
-          <label for="password">Password:</label>
+        </label>
+        <label class="info-fact">Password:
           <input
             type="password"
             name="password"
-            id="password"
             minlength="6"
             maxlength="8"
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="info">
         <legend>An interesting fact about you!</legend>
-        <div class="fact">
+
+        <div class="info-fact">
           Do you love cats?
-          <input
-            type="radio"
-            name="loveCats"
-            id="love"
-            value="yes"
-          >
-          <label for="love">Yes</label>
-          <input
-            type="radio"
-            name="loveCats"
-            id="noLove"
-            value="no"
-          >
-          <label for="noLove">No</label>
+          <label class="info-fact inline">
+            <input
+              type="radio"
+              name="loveCats"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label class="info-fact inline">
+            <input
+              type="radio"
+              name="loveCats"
+              value="no"
+            >
+            No
+          </label>
         </div>
-        <div class="fact">
-          <label for="color">What is your favorite color?</label>
+        <label class="info-fact">
+          What is your favorite color?
           <input
             type="color"
             name="favouriteColor"
             id="color"
           >
-        </div>
-        <div class="fact">
-          <label for="time">What time do you go to bed?</label>
+        </label>
+        <label class="info-fact">
+          What time do you go to bed?
           <input
             type="time"
             name="goToBed"
-            id="time"
           >
-        </div>
-        <div class="fact">
-          <label for="cars">What are your favorite brand of cars?</label>
+        </label>
+
+        <label class="info-fact">
+          What are your favorite brand of cars?
           <select
             name="favoriteCars"
-            id="cars"
             multiple
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </div>
-        <div class="fact">
-          <label for="rate">How do you rate our work?</label>
+        </label>
+        <label class="info-fact">
+          How do you rate our work?
           <input
             type="range"
             name="rate"
-            id="rate"
             min="0"
             max="10"
             step="1"
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="info">
         <legend>Additional info:</legend>
-        <div class="ad-info">
-          <label for="comments">Comments:</label>
-          <textarea name="comments" id="comments"></textarea>
-        </div>
-        <div class="ad-info">
-          <label for="recommend">Would you recommend us?</label>
+        <label class="info-fact">
+          Comments:
+          <textarea name="comments"></textarea>
+        </label>
+        <label class="info-fact">
+          Would you recommend us?
           <select name="recommend" id="recommend">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
           </select>
-        </div>
+        </label>
       </fieldset>
       <button type="submit">Submit</button>
     </form>
